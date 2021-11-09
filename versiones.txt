@@ -1,2 +1,7 @@
 Nomenclatura Branch: Versión - Descripción
 
+Main: 0.0m Proyecto vacío - Creacion de carpeta y proyecto en GIT
+Franco: F0.1 - Creacion del ER en dia.
+Franco: F0.2 - Actualizacion de ER en dia.
+Franco: F0.3 - Actualizacion de ER en dia.
+Main: v0.4 - Añadiendo proyecto de visual
