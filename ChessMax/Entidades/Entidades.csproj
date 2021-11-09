@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EntidadCampeonatosAnteriores.cs" />
+    <Compile Include="EntidadHotel.cs" />
     <Compile Include="EntidadParticipante.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
