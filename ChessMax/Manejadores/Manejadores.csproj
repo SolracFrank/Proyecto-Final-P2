@@ -41,6 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ManejadorAlojamiento.cs" />
+    <Compile Include="ManejadorCampeonatosAnteriores.cs" />
+    <Compile Include="ManejadorHotel.cs" />
+    <Compile Include="ManejadorJornada.cs" />
+    <Compile Include="ManejadorJugada.cs" />
+    <Compile Include="ManejadorPais.cs" />
+    <Compile Include="ManejadorParticipante.cs" />
+    <Compile Include="ManejadorPartida.cs" />
+    <Compile Include="ManejadorSala.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

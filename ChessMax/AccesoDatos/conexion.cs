@@ -4,7 +4,7 @@ using MySql.Data.MySqlClient;
 
 namespace AccesoDatos
 {
-    class conexion
+    public class conexion
     {
         MySqlConnection _conn;
         public conexion(string server, string user, string password, string based, uint port)
