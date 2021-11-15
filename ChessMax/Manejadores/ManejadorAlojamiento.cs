@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Windows.Forms;
 using AccesoDatos;
 using Entidades;
 
@@ -30,7 +26,8 @@ namespace Manejadores
         }
         public void MostrarAlojamiento(DataGridView tabla, string dato)
         {
-
+            tabla.DataSource = _base.ObtenerDatos(string.Format("SELECT * FROM alojamiento WHERE Codigo LIKE '%{0}%';", dato), "alojamiento").Tables["alojamiento"];
+            tabla.AutoResizeColumns();
         }
     }
 }
