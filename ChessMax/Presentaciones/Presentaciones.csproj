@@ -49,11 +49,65 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAlojamiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAlojamiento.Designer.cs">
+      <DependentUpon>frmAlojamiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnterCamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnterCamo.Designer.cs">
+      <DependentUpon>frmAnterCamo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHotel.Designer.cs">
+      <DependentUpon>frmHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJornada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJornada.Designer.cs">
+      <DependentUpon>frmJornada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJugada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJugada.Designer.cs">
+      <DependentUpon>frmJugada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPais.Designer.cs">
+      <DependentUpon>frmPais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmParticipante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParticipante.Designer.cs">
+      <DependentUpon>frmParticipante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPartida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPartida.Designer.cs">
+      <DependentUpon>frmPartida.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSala.Designer.cs">
+      <DependentUpon>frmSala.cs</DependentUpon>
     </Compile>
     <Compile Include="program.cs" />
   </ItemGroup>
@@ -65,6 +119,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmAlojamiento.resx">
+      <DependentUpon>frmAlojamiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnterCamo.resx">
+      <DependentUpon>frmAnterCamo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHotel.resx">
+      <DependentUpon>frmHotel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>

@@ -11,7 +11,7 @@ namespace Manejadores
         {
             _base = new conexion("localhost", "root", "", "clubajedrez", 3306);
         }
-
+        //ADD DELETE UPDATE SHOW BD
         public void AddAlojamiento(EntidadAlojamiento alojar)
         {
             _base.Consultar(string.Format("CALL p_addAlojamiento('{0}','{1}','{2}','{3}');", alojar.Codigo, alojar.Fecha, alojar.FkHotel, alojar.FkParticipante));
@@ -29,5 +29,6 @@ namespace Manejadores
             tabla.DataSource = _base.ObtenerDatos(string.Format("SELECT * FROM alojamiento WHERE Codigo LIKE '%{0}%';", dato), "alojamiento").Tables["alojamiento"];
             tabla.AutoResizeColumns();
         }
+
     }
 }

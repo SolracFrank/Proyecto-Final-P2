@@ -24,3 +24,4 @@ C:\Users\carlo\Documents\Mis proyectos\ProyectoF P2\ChessMax\Presentaciones\obj\
 C:\Users\carlo\Documents\Mis proyectos\ProyectoF P2\ChessMax\Presentaciones\obj\Debug\Presentaciones.pdb
 C:\Users\carlo\Documents\Mis proyectos\ProyectoF P2\ChessMax\Presentaciones\obj\Debug\Presentaciones.frmPrincipal.resources
 C:\Users\carlo\Documents\Mis proyectos\ProyectoF P2\ChessMax\Presentaciones\obj\Debug\Presentaciones.csproj.GenerateResource.cache
+C:\Users\carlo\Documents\Mis proyectos\ProyectoF P2\ChessMax\Presentaciones\obj\Debug\Presentaciones.frmAlojamiento.resources

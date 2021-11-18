@@ -1,4 +1,5 @@
 ﻿using AccesoDatos;
+using Entidades;
 using System.Windows.Forms;
 
 namespace Manejadores

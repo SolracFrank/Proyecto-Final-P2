@@ -9,7 +9,10 @@
             FkHotel = fkHotel;
             FkParticipante = fkParticipante;
         }
+        public EntidadAlojamiento()
+        {
 
+        }
         public string Codigo { get; set; }
         public string Fecha { get; set; }
         public string FkHotel { get; set; }
