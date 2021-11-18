@@ -1,0 +1,6 @@
+C:\Users\carlo\Documents\Mis proyectos\ProyectoF P2\ChessMax\Entidades\bin\Debug\Entidades.dll
+C:\Users\carlo\Documents\Mis proyectos\ProyectoF P2\ChessMax\Entidades\bin\Debug\Entidades.pdb
+C:\Users\carlo\Documents\Mis proyectos\ProyectoF P2\ChessMax\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\carlo\Documents\Mis proyectos\ProyectoF P2\ChessMax\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\carlo\Documents\Mis proyectos\ProyectoF P2\ChessMax\Entidades\obj\Debug\Entidades.dll
+C:\Users\carlo\Documents\Mis proyectos\ProyectoF P2\ChessMax\Entidades\obj\Debug\Entidades.pdb
