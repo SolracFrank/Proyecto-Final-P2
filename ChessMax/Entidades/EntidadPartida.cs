@@ -11,6 +11,10 @@
             Resultadp = resultadp;
             FkJornada = fkJornada;
         }
+        public EntidadPartida()
+        {
+
+        }
         public string Codigo { get; set; }
         public string FkJugador1Blancas { get; set; }
         public string FkJugador2Negras { get; set; }

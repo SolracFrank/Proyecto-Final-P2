@@ -12,6 +12,9 @@
         public string Codigo { get; set; }
         public string Fecha { get; set; }
         public string FkSala { get; set; }
+        public EntidadJornada()
+        {
 
+        }
     }
 }

@@ -12,7 +12,10 @@
             Nivel = nivel;
             FkPais = fkPais;
         }
+        public EntidadParticipante()
+        {
 
+        }
         public string NoAsociado { get; set; }
         public string Nombre { get; set; }
         public string ApellidoP { get; set; }

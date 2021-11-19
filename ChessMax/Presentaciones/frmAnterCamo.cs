@@ -22,9 +22,17 @@ namespace Presentaciones
         }
         void GuardarEntidad() //Guardamos Entidad para su uso
         {
-            eantercamp.FkParticipante = txtParticipante.Text;
-            eantercamp.Nombre = txtNombre.Text;
-            eantercamp.Tipo_Participacion = txtTipoParticipacion.Text;
+            try
+            {
+                eantercamp.FkParticipante = txtParticipante.Text;
+                eantercamp.Nombre = txtNombre.Text;
+                eantercamp.Tipo_Participacion = txtTipoParticipacion.Text;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
         void Aceptar() //Actualizamos o añadimos datos
         {

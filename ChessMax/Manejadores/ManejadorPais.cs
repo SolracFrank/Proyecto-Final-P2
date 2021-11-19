@@ -15,6 +15,10 @@ namespace Manejadores
         {
             _base.Consultar(string.Format("CALL p_addPais('{0}','{1}',{2},'{3}');",Pais.No_Correlativo,Pais.Nombre,Pais.Num_Clubes,Pais.Fk_Representante));
         }
+        public void AddPaisNoRep(EntidadPais Pais)
+        {
+            _base.Consultar(string.Format("CALL P_addPaisNoRep('{0}','{1}',{2});", Pais.No_Correlativo, Pais.Nombre, Pais.Num_Clubes));
+        }
         public void DelPais(EntidadPais Pais)
         {
             _base.Consultar(string.Format("CALL p_delPais('{0}');",Pais.No_Correlativo));

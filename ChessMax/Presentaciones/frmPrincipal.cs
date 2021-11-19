@@ -21,6 +21,12 @@ namespace Presentaciones
         public static EntidadAlojamiento ealojamiento;
         public static EntidadCampeonatosAnteriores eantercamp;
         public static EntidadHotel ehotel;
+        public static EntidadJornada ejornada;
+        public static EntidadJugada ejugada;
+        public static EntidadPais epais;
+        public static EntidadPartida epartida;
+        public static EntidadParticipante eparticipante;
+        public static EntidadSala esala;
         //Manejadores
         ManejadorAlojamiento _alojamiento;
         ManejadorCampeonatosAnteriores _campanter;
@@ -36,12 +42,12 @@ namespace Presentaciones
             _alojamiento = new ManejadorAlojamiento(); ealojamiento = new EntidadAlojamiento();
             _campanter = new ManejadorCampeonatosAnteriores(); eantercamp = new EntidadCampeonatosAnteriores();
             _hotel = new ManejadorHotel(); ehotel = new EntidadHotel();
-            _jornada = new ManejadorJornada();
-            _jugada = new ManejadorJugada();
-            _pais = new ManejadorPais();
-            _partida = new ManejadorPartida();
-            _sala = new ManejadorSala();
-            _participante = new ManejadorParticipante();
+            _jornada = new ManejadorJornada(); ejornada = new EntidadJornada();
+            _jugada = new ManejadorJugada(); ejugada = new EntidadJugada();
+            _pais = new ManejadorPais(); epais = new EntidadPais();
+            _partida = new ManejadorPartida(); epartida = new EntidadPartida();
+            _sala = new ManejadorSala();  esala = new EntidadSala();
+            _participante = new ManejadorParticipante(); eparticipante = new EntidadParticipante();
             InitializeComponent();
         }
         //Cargar datos en DataGrid
@@ -140,44 +146,80 @@ namespace Presentaciones
             }
             else if (cmbTablas.Text == "jornada")
             {
+                ejornada.Codigo = dtgDatos.CurrentRow.Cells["codigo"].Value.ToString();
+                ejornada.Fecha = dtgDatos.CurrentRow.Cells["fecha"].Value.ToString();
+                ejornada.FkSala = dtgDatos.CurrentRow.Cells["fkSala"].Value.ToString();
                 if (AbrirVentata == true)
                 {
-
+                    frmJornada jornada = new frmJornada();
+                    jornada.ShowDialog();
                 }
             }
             else if (cmbTablas.Text == "jugada")
             {
+                ejugada.Codigo = dtgDatos.CurrentRow.Cells["codigo"].Value.ToString();
+                ejugada.Movimiento = dtgDatos.CurrentRow.Cells["movimiento"].Value.ToString();
+                ejugada.Comentario = dtgDatos.CurrentRow.Cells["comentario"].Value.ToString();
+                ejugada.FkidPartida = dtgDatos.CurrentRow.Cells["fkIdPartida"].Value.ToString();
                 if (AbrirVentata == true)
                 {
-
+                    frmJugada jugada = new frmJugada();
+                    jugada.ShowDialog();
                 }
             }
             else if (cmbTablas.Text == "pais")
             {
+                epais.No_Correlativo = dtgDatos.CurrentRow.Cells["No_Correlativo"].Value.ToString();
+                epais.Nombre = dtgDatos.CurrentRow.Cells["Nombre"].Value.ToString();
+                epais.Fk_Representante = dtgDatos.CurrentRow.Cells["fkRepresentante"].Value.ToString();
+                epais.Num_Clubes = int.Parse(dtgDatos.CurrentRow.Cells["Num_Clubes"].Value.ToString());
                 if (AbrirVentata == true)
                 {
-
+                    frmPais pais = new frmPais();
+                    pais.ShowDialog();
                 }
             }
             else if (cmbTablas.Text == "participante")
             {
+                eparticipante.NoAsociado = dtgDatos.CurrentRow.Cells["No_Asociado"].Value.ToString();
+                eparticipante.Nombre = dtgDatos.CurrentRow.Cells["Nombre"].Value.ToString();
+                eparticipante.ApellidoP = dtgDatos.CurrentRow.Cells["ApellidoP"].Value.ToString();
+                eparticipante.ApellidoM = dtgDatos.CurrentRow.Cells["ApellidoM"].Value.ToString();
+                eparticipante.Tipo_Participacion = dtgDatos.CurrentRow.Cells["Tipo_Participacion"].Value.ToString();
+                eparticipante.Nivel = int.Parse(dtgDatos.CurrentRow.Cells["NivelJuego"].Value.ToString());
+                eparticipante.FkPais = dtgDatos.CurrentRow.Cells["fkPais"].Value.ToString();
                 if (AbrirVentata == true)
                 {
-
+                    frmParticipante participante = new frmParticipante();
+                    participante.ShowDialog();
                 }
             }
             else if (cmbTablas.Text == "partida")
             {
+                epartida.Codigo = ejugada.FkidPartida = dtgDatos.CurrentRow.Cells["codigo"].Value.ToString();
+                epartida.FkJugador1Blancas = ejugada.FkidPartida = dtgDatos.CurrentRow.Cells["fkJugador1Blancas"].Value.ToString();
+                epartida.FkJugador2Negras = ejugada.FkidPartida = dtgDatos.CurrentRow.Cells["fkJugador2Negras"].Value.ToString();
+                epartida.FkArbitro = ejugada.FkidPartida = dtgDatos.CurrentRow.Cells["fkArbitro"].Value.ToString();
+                epartida.Resultadp = ejugada.FkidPartida = dtgDatos.CurrentRow.Cells["resultado"].Value.ToString();
+                epartida.FkJornada = ejugada.FkidPartida = dtgDatos.CurrentRow.Cells["fkJornada"].Value.ToString();
                 if (AbrirVentata == true)
                 {
-
+                    frmPartida partida = new frmPartida();
+                    partida.ShowDialog();
                 }
             }
             else if (cmbTablas.Text == "sala")
             {
+                esala.IdSala = dtgDatos.CurrentRow.Cells["Sala"].Value.ToString();
+                esala.Radio = byte.Parse(dtgDatos.CurrentRow.Cells["Radio"].Value.ToString());
+                esala.Tv = byte.Parse(dtgDatos.CurrentRow.Cells["TV"].Value.ToString());
+                esala.Video = byte.Parse(dtgDatos.CurrentRow.Cells["Video"].Value.ToString());
+                esala.Capacidad = int.Parse(dtgDatos.CurrentRow.Cells["Capacidad"].Value.ToString());
+                esala.FkHotel = dtgDatos.CurrentRow.Cells["fkHotel"].Value.ToString();
                 if (AbrirVentata == true)
                 {
-
+                    frmSala sala = new frmSala();
+                    sala.ShowDialog();
                 }
             }
             else
@@ -218,31 +260,31 @@ namespace Presentaciones
             }
             else if (cmbTablas.Text == "jornada")
             {
-
+                _jornada.DelJornada(ejornada);
             }
             else if (cmbTablas.Text == "jugada")
             {
-
+                _jugada.DelJugada(ejugada);
             }
             else if (cmbTablas.Text == "pais")
             {
-
+                _pais.DelPais(epais);
             }
             else if (cmbTablas.Text == "participante")
             {
-
+                _participante.DelParticipante(eparticipante);
             }
             else if (cmbTablas.Text == "partida")
             {
-
+                _partida.DelPartida(epartida);
             }
             else if (cmbTablas.Text == "sala")
             {
-
+                _sala.DelSala(esala);
             }
             else
             {
-
+                MessageBox.Show("No tabla seleccionada");
             }
         }
         void Editar()

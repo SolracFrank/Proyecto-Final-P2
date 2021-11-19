@@ -128,8 +128,26 @@
     <EmbeddedResource Include="frmHotel.resx">
       <DependentUpon>frmHotel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmJornada.resx">
+      <DependentUpon>frmJornada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJugada.resx">
+      <DependentUpon>frmJugada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPais.resx">
+      <DependentUpon>frmPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParticipante.resx">
+      <DependentUpon>frmParticipante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPartida.resx">
+      <DependentUpon>frmPartida.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSala.resx">
+      <DependentUpon>frmSala.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

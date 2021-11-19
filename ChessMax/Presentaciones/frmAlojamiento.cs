@@ -22,10 +22,19 @@ namespace Presentaciones
         }
         void GuardarEntidad() //Guardamos Entidad para su uso
         {
-            alojar.Codigo = txtCodigo.Text;
-            alojar.Fecha = txtFecha.Text;
-            alojar.FkHotel = txtHotel.Text;
-            alojar.FkParticipante = txtCodigoParticipante.Text;
+
+            try
+            {
+                alojar.Codigo = txtCodigo.Text;
+                alojar.Fecha = txtFecha.Text;
+                alojar.FkHotel = txtHotel.Text;
+                alojar.FkParticipante = txtCodigoParticipante.Text;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
         void Aceptar() //Actualizamos o añadimos datos
         {

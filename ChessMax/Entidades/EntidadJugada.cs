@@ -9,6 +9,10 @@
             Comentario = comentario;
             FkidPartida = fkIdPartida;
         }
+        public EntidadJugada()
+        {
+
+        }
 
         public string Codigo { get; set; }
         public string Movimiento { get; set; }

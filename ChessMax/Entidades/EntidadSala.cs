@@ -11,6 +11,10 @@
             Video = video;
             FkHotel = fkHotel;
         }
+        public EntidadSala()
+        {
+
+        }
         public string IdSala { get; set; }
         public int Capacidad { get; set; }
         public byte Tv { get; set; }

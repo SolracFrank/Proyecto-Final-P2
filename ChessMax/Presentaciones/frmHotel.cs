@@ -22,12 +22,20 @@ namespace Presentaciones
         }
         void GuardarEntidad() //Guardamos Entidad para su uso
         {
-            ehotel.NombreHotel = txtNombre.Text;
-            ehotel.Colonia = txtColonia.Text;
-            ehotel.Calle = txtCalle.Text;
-            ehotel.Ciudad = txtCiudad.Text;
-            ehotel.Numero = int.Parse(txtNumero.Text);
-            ehotel.Telefono = txtTelefono.Text;
+            try
+            {
+                ehotel.NombreHotel = txtNombre.Text;
+                ehotel.Colonia = txtColonia.Text;
+                ehotel.Calle = txtCalle.Text;
+                ehotel.Ciudad = txtCiudad.Text;
+                ehotel.Numero = int.Parse(txtNumero.Text);
+                ehotel.Telefono = txtTelefono.Text;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
         void Aceptar() //Actualizamos o añadimos datos
         {
